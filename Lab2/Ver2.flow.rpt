@@ -1,0 +1,116 @@
+Flow report for Ver2
+Tue Aug 11 16:17:42 2009
+Quartus II Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; Flow Summary                                                                       ;
++------------------------------------+-----------------------------------------------+
+; Flow Status                        ; Successful - Tue Aug 11 16:17:42 2009         ;
+; Quartus II Version                 ; 8.0 Build 231 07/10/2008 SP 1 SJ Full Version ;
+; Revision Name                      ; Ver2                                          ;
+; Top-level Entity Name              ; Lab2                                          ;
+; Family                             ; Cyclone II                                    ;
+; Device                             ; EP2C35F672C6                                  ;
+; Timing Models                      ; Final                                         ;
+; Met timing requirements            ; Yes                                           ;
+; Total logic elements               ; 2,739 / 33,216 ( 8 % )                        ;
+;     Total combinational functions  ; 2,551 / 33,216 ( 8 % )                        ;
+;     Dedicated logic registers      ; 1,476 / 33,216 ( 4 % )                        ;
+; Total registers                    ; 1476                                          ;
+; Total pins                         ; 122 / 475 ( 26 % )                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 358,336 / 483,840 ( 74 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                 ;
++------------------------------------+-----------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 08/11/2009 16:12:59 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Ver2                ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                            ;
++------------------------------------+-----------------------------+---------------+-------------+------------+
+; Assignment Name                    ; Value                       ; Default Value ; Entity Name ; Section Id ;
++------------------------------------+-----------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID              ; 76639480463.124999997801800 ; --            ; --          ; --         ;
+; PARTITION_COLOR                    ; 2147039                     ; --            ; Lab2        ; Top        ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                      ; --            ; Lab2        ; Top        ;
+; TOP_LEVEL_ENTITY                   ; Lab2                        ; Ver2          ; --          ; --         ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                         ; --            ; --          ; eda_palace ;
++------------------------------------+-----------------------------+---------------+-------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:01:03     ; 1.0                     ; 225 MB              ; 00:00:59                           ;
+; Fitter                  ; 00:00:47     ; 1.0                     ; 240 MB              ; 00:00:46                           ;
+; Assembler               ; 00:00:07     ; 1.0                     ; 214 MB              ; 00:00:06                           ;
+; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 145 MB              ; 00:00:04                           ;
+; Analysis & Synthesis    ; 00:00:24     ; 1.0                     ; 224 MB              ; 00:00:20                           ;
+; Partition Merge         ; 00:00:06     ; 1.0                     ; 189 MB              ; 00:00:05                           ;
+; Fitter                  ; 00:00:48     ; 1.0                     ; 240 MB              ; 00:00:47                           ;
+; Assembler               ; 00:00:07     ; 1.0                     ; 214 MB              ; 00:00:06                           ;
+; Classic Timing Analyzer ; 00:00:04     ; 1.0                     ; 146 MB              ; 00:00:04                           ;
+; Total                   ; 00:03:30     ; --                      ; --                  ; 00:03:17                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Ver2
+quartus_fit --read_settings_files=off --write_settings_files=off Lab2 -c Ver2
+quartus_asm --read_settings_files=off --write_settings_files=off Lab2 -c Ver2
+quartus_tan --read_settings_files=off --write_settings_files=off Lab2 -c Ver2 --timing_analysis_only
+quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c Ver2
+quartus_cdb --read_settings_files=off --write_settings_files=off Lab2 -c Ver2 --merge=on
+quartus_fit --read_settings_files=off --write_settings_files=off Lab2 -c Ver2
+quartus_asm --read_settings_files=off --write_settings_files=off Lab2 -c Ver2
+quartus_tan --read_settings_files=off --write_settings_files=off Lab2 -c Ver2 --timing_analysis_only
+
+
+
