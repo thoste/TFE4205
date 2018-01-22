@@ -1,0 +1,229 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/stens/Documents/NTNU/TFE4205/Lab2/simulation/qsim
+Ehard_block
+Z1 w1516624414
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8Ver2.vho
+Z9 FVer2.vho
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1516624415
+!i10b 1
+Z12 !s108 1516624415.000000
+Z13 !s90 -work|work|Ver2.vho|
+Z14 !s107 Ver2.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ekrets_12
+Z17 w1516616836
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L77
+VXE:3IXkn^<mDKi<?Qf6?V0
+!s100 b5i;;Z0a>m9zkEGNQEhRE1
+R10
+32
+Z18 !s110 1516616838
+!i10b 1
+Z19 !s108 1516616838.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 krets_12 0 22 XE:3IXkn^<mDKi<?Qf6?V0
+l153
+L107
+VDb4PCbY:lk7Bk0;]>_YTa1
+!s100 n;@@>N05k_4LJ=hKVj=@V3
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Ekrets_12_vhd_vec_tst
+Z20 w1516616835
+R5
+R6
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L31
+VP_741om<;HlaPe1UN;hLW3
+!s100 Rf31dN0oQ4In9_KbTGoQf2
+R10
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Akrets_12_arch
+R5
+R6
+DEx4 work 20 krets_12_vhd_vec_tst 0 22 P_741om<;HlaPe1UN;hLW3
+l62
+L33
+V=Mg9o4cTRK<F[=W:k3Y6K0
+!s100 =9C2i[E0_3B<86FI48[mI1
+R10
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R15
+R16
+Estudentdesign
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L77
+Ve321>2<lje9;26cfdSO6Z2
+!s100 ^oJMXbSg6Z;OVaH2f:Ql_0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 studentdesign 0 22 e321>2<lje9;26cfdSO6Z2
+l332
+L188
+VT0]^0^0^a[>88>OS33>z41
+!s100 biT3V4g@le?>kz`;d^m`O0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Estudentdesign_vhd_vec_tst
+Z25 w1516624413
+R5
+R6
+R0
+Z26 8Waveform1.vwf.vht
+Z27 FWaveform1.vwf.vht
+l0
+L31
+V;iiEc=@b_KQ`gDT[iWh:91
+!s100 Bn8K0M8oZM8k4f7Ba>9nO2
+R10
+32
+R11
+!i10b 1
+R12
+Z28 !s90 -work|work|Waveform1.vwf.vht|
+Z29 !s107 Waveform1.vwf.vht|
+!i113 1
+R15
+R16
+Astudentdesign_arch
+R5
+R6
+Z30 DEx4 work 25 studentdesign_vhd_vec_tst 0 22 ;iiEc=@b_KQ`gDT[iWh:91
+l62
+L33
+V`5lcG3f4TW@F257fP2LdH2
+!s100 RenMSoJnc2zaWD7W3SmfV2
+R10
+32
+R11
+!i10b 1
+R12
+R28
+R29
+!i113 1
+R15
+R16

@@ -408,6 +408,38 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 80 144))
 	)
 )
+(symbol
+	(rect 328 24 392 72)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 37 25 54)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(pt 272 96)
 	(pt 296 96)
@@ -569,11 +601,6 @@ refer to the applicable agreement for further details.
 	(pt 296 128)
 )
 (connector
-	(text "DI[15]" (rect 306 96 334 113)(font "Intel Clear" ))
-	(pt 448 112)
-	(pt 296 112)
-)
-(connector
 	(pt 688 88)
 	(pt 664 88)
 	(bus)
@@ -724,11 +751,6 @@ refer to the applicable agreement for further details.
 	(pt 664 160)
 )
 (connector
-	(text "DO[3]" (rect 554 128 582 145)(font "Intel Clear" ))
-	(pt 544 144)
-	(pt 664 144)
-)
-(connector
 	(text "DO[14]" (rect 554 112 588 129)(font "Intel Clear" ))
 	(pt 544 128)
 	(pt 664 128)
@@ -757,42 +779,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 424 584)
 	(pt 568 584)
-)
-(connector
-	(pt 272 64)
-	(pt 384 64)
-	(bus)
-)
-(connector
-	(pt 448 192)
-	(pt 384 192)
-)
-(connector
-	(pt 384 64)
-	(pt 384 192)
-	(bus)
-)
-(connector
-	(pt 448 368)
-	(pt 384 368)
-)
-(connector
-	(pt 384 192)
-	(pt 384 368)
-	(bus)
-)
-(connector
-	(pt 448 544)
-	(pt 384 544)
-)
-(connector
-	(pt 384 368)
-	(pt 384 544)
-	(bus)
-)
-(connector
-	(pt 448 720)
-	(pt 384 720)
 )
 (connector
 	(pt 544 448)
@@ -835,18 +821,74 @@ refer to the applicable agreement for further details.
 	(pt 448 176)
 )
 (connector
+	(pt 328 56)
+	(pt 328 112)
+)
+(connector
+	(text "DI[15]" (rect 306 96 334 113)(font "Intel Clear" ))
+	(pt 448 112)
+	(pt 328 112)
+)
+(connector
+	(pt 328 112)
+	(pt 296 112)
+)
+(connector
+	(pt 280 64)
+	(pt 280 40)
+)
+(connector
+	(pt 280 40)
+	(pt 328 40)
+)
+(connector
+	(pt 448 192)
+	(pt 392 192)
+)
+(connector
+	(pt 448 368)
+	(pt 392 368)
+)
+(connector
+	(pt 392 48)
+	(pt 392 192)
+)
+(connector
+	(pt 448 544)
+	(pt 392 544)
+)
+(connector
+	(pt 392 192)
+	(pt 392 368)
+)
+(connector
 	(pt 448 704)
-	(pt 384 704)
+	(pt 392 704)
 )
 (connector
-	(pt 384 544)
-	(pt 384 704)
-	(bus)
+	(pt 392 368)
+	(pt 392 544)
 )
 (connector
-	(pt 384 704)
-	(pt 384 720)
-	(bus)
+	(pt 448 720)
+	(pt 392 720)
+)
+(connector
+	(pt 392 544)
+	(pt 392 704)
+)
+(connector
+	(pt 392 704)
+	(pt 392 720)
+)
+(connector
+	(pt 280 64)
+	(pt 272 64)
+)
+(connector
+	(text "DO[13]" (rect 554 128 588 145)(font "Intel Clear" ))
+	(pt 544 144)
+	(pt 664 144)
 )
 (junction (pt 296 672))
 (junction (pt 296 656))
@@ -878,7 +920,8 @@ refer to the applicable agreement for further details.
 (junction (pt 664 640))
 (junction (pt 664 656))
 (junction (pt 664 672))
-(junction (pt 384 192))
-(junction (pt 384 368))
-(junction (pt 384 544))
-(junction (pt 384 704))
+(junction (pt 328 112))
+(junction (pt 392 192))
+(junction (pt 392 368))
+(junction (pt 392 704))
+(junction (pt 392 544))
