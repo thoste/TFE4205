@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Jan 22 13:27:47 2018
+Analysis & Synthesis Status : Successful - Tue Jan 23 14:51:10 2018
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Ver2
-Top-level Entity Name : StudentDesign
+Top-level Entity Name : Krets_12
 Family : Cyclone IV E
-Total logic elements : 23
-    Total combinational functions : 23
+Total logic elements : 6
+    Total combinational functions : 6
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 92
+Total pins : 11
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

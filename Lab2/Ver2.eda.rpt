@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Ver2
-Mon Jan 22 13:33:34 2018
+Tue Jan 23 14:54:53 2018
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jan 22 13:33:34 2018 ;
+; EDA Netlist Writer Status ; Successful - Tue Jan 23 14:54:52 2018 ;
 ; Revision Name             ; Ver2                                  ;
-; Top-level Entity Name     ; StudentDesign                         ;
+; Top-level Entity Name     ; Krets_12                              ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -101,7 +101,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Jan 22 13:33:33 2018
+    Info: Processing started: Tue Jan 23 14:54:51 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/stens/Documents/NTNU/TFE4205/Lab2/simulation/qsim/ Lab2 -c Ver2
 Info (204019): Generated file Ver2_7_1200mv_85c_slow.vho in folder "C:/Users/stens/Documents/NTNU/TFE4205/Lab2/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Ver2_7_1200mv_0c_slow.vho in folder "C:/Users/stens/Documents/NTNU/TFE4205/Lab2/simulation/qsim//" for EDA simulation tool
@@ -112,8 +112,8 @@ Info (204019): Generated file Ver2_7_1200mv_0c_vhd_slow.sdo in folder "C:/Users/
 Info (204019): Generated file Ver2_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/stens/Documents/NTNU/TFE4205/Lab2/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Ver2_vhd.sdo in folder "C:/Users/stens/Documents/NTNU/TFE4205/Lab2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 581 megabytes
-    Info: Processing ended: Mon Jan 22 13:33:35 2018
+    Info: Peak virtual memory: 576 megabytes
+    Info: Processing ended: Tue Jan 23 14:54:53 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
