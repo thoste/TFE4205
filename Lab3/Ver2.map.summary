@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue Jan 23 16:45:39 2018
+Analysis & Synthesis Status : Successful - Mon Jan 29 16:12:13 2018
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Ver2
-Top-level Entity Name : mux_21
+Top-level Entity Name : StudentDesign
 Family : Cyclone IV E
-Total logic elements : 40
-    Total combinational functions : 40
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 121
+Total logic elements : 254
+    Total combinational functions : 235
+    Dedicated logic registers : 89
+Total registers : 89
+Total pins : 92
 Total virtual pins : 0
 Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
+Embedded Multiplier 9-bit elements : 6
 Total PLLs : 0

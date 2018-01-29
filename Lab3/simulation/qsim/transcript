@@ -1,0 +1,518 @@
+# do Lab3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:49 on Jan 29,2018
+# vcom -work work Ver2.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity StudentDesign
+# -- Compiling architecture structure of StudentDesign
+# End time: 16:12:49 on Jan 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:12:49 on Jan 29,2018
+# vcom -work work StudentDesign_sim.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity StudentDesign_vhd_vec_tst
+# -- Compiling architecture StudentDesign_arch of StudentDesign_vhd_vec_tst
+# End time: 16:12:49 on Jan 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -sdfmax StudentDesign_vhd_vec_tst/i1=Ver2_vhd.sdo -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.StudentDesign_vhd_vec_tst 
+# Start time: 16:12:49 on Jan 29,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.studentdesign_vhd_vec_tst(studentdesign_arch)
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.studentdesign(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading ieee.std_logic_unsigned(body)
+# Loading cycloneive.cycloneive_mac_mult(vital_cycloneive_mac_mult)
+# Loading cycloneive.cycloneive_mac_data_reg(vital_cycloneive_mac_data_reg)
+# Loading cycloneive.cycloneive_mac_sign_reg(cycloneive_mac_sign_reg)
+# Loading cycloneive.cycloneive_mac_mult_internal(vital_cycloneive_mac_mult_internal)
+# Loading cycloneive.cycloneive_mac_out(vital_cycloneive_mac_out)
+# Loading instances from Ver2_vhd.sdo
+# Loading timing data from Ver2_vhd.sdo
+# ** Warning: Design size of 48987 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst File: StudentDesign_sim.vwf.vht
+# after#35
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 4  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 364 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 364 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 365 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 365 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 367 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 367 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 370 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 370 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 371 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 371 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 374 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 374 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 379 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 379 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 382 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 382 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 383 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 383 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 387 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 387 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 391 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 391 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 395 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 395 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 406 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 406 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 408 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 408 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 409 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 409 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 473 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 473 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 488 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 488 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 504 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 504 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 516 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 516 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 517 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 517 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 610 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 610 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 611 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 611 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 612 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 612 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 614 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 614 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 622 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 622 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 635 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 635 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 640 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 640 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 646 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 646 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 675 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 675 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 677 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 677 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 680 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 680 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 682 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 682 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 683 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 683 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 703 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 703 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 703 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 703 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 704 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 704 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 704 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 704 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 707 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 707 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 709 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 709 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 711 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 711 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 716 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 716 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 718 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 718 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 720 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 720 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 721 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 721 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 722 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 722 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 727 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 727 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 729 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 729 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 730 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 730 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 738 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 738 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 741 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 741 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 750 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 750 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 761 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 761 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 769 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 830 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 830 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 908 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 913 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 923 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 934 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 943 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 995 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 996 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 997 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1005 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1041 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1191 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1228 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1237 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1265 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1438 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1438 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1450 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1450 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1509 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1509 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1586 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1624 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1624 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1644 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1644 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1650 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1653 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1653 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1655 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1655 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1660 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1660 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1665 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1665 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1697 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1697 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1708 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1708 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1719 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1719 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1720 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1720 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1721 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1721 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1733 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1733 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1745 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1745 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1757 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1757 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1759 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1759 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1794 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1794 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1825 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1825 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1857 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1857 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1862 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1862 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1906 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1906 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1924 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1956 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1982 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2043 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst6|inst|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 4987 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5003 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5004 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5029 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5032 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5247 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5270 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5277 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5280 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5326 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5341 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5416 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5421 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5470 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5515 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5521 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5535 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5545 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5597 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5643 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5730 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5740 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5747 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5773 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5795 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5813 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5873 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5887 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult3\/mac_multiply
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 6334 ps  Iteration: 0  Instance: /studentdesign_vhd_vec_tst/i1/\inst5|inst8|inst1|inst6|lpm_mult_component|auto_generated|mac_mult1\/mac_multiply
+# End time: 16:12:51 on Jan 29,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 226

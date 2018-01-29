@@ -20,21 +20,21 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 216 128)
+	(rect 16 16 288 128)
 	(text "mux_21" (rect 5 0 36 12)(font "Arial" ))
 	(text "inst" (rect 8 96 20 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "data0[39..0]" (rect 0 0 46 12)(font "Arial" ))
-		(text "data0[39..0]" (rect 21 27 67 39)(font "Arial" ))
+		(text "data0[busWidth-1..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "data0[busWidth-1..0]" (rect 21 27 101 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "data1[39..0]" (rect 0 0 44 12)(font "Arial" ))
-		(text "data1[39..0]" (rect 21 43 65 55)(font "Arial" ))
+		(text "data1[busWidth-1..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "data1[busWidth-1..0]" (rect 21 43 100 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -45,13 +45,19 @@ refer to the applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
-		(pt 200 32)
+		(pt 272 32)
 		(output)
-		(text "dataOut[39..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "dataOut[39..0]" (rect 124 27 179 39)(font "Arial" ))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
+		(text "dataOut[busWidth-1..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "dataOut[busWidth-1..0]" (rect 162 27 251 39)(font "Arial" ))
+		(line (pt 272 32)(pt 256 32)(line_width 3))
 	)
+	(parameter
+		"busWidth"
+		"40"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 184 96)(line_width 1))
+		(rectangle (rect 16 16 256 96)(line_width 1))
 	)
+	(annotation_block (parameter)(rect 288 -64 388 16))
 )

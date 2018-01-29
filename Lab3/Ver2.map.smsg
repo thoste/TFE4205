@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fsm_filtSTM.sv(14): always construct contains both blocking and non-blocking assignments File: C:/Users/stens/Documents/NTNU/TFE4205/Lab3/fsm_filtSTM.sv Line: 14
