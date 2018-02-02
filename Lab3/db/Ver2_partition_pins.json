@@ -4,163 +4,371 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "DVO",
+					"name" : "LCD_BLON",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[14]",
+					"name" : "LCD_EN",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[13]",
+					"name" : "LCD_ON",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[12]",
+					"name" : "LCD_RS",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[11]",
+					"name" : "LCD_RW",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[10]",
+					"name" : "I2C_SCLK",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[9]",
+					"name" : "AUD_ADCLRCK",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[8]",
+					"name" : "AUD_DACLRCK",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[7]",
+					"name" : "AUD_DACDAT",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[6]",
+					"name" : "busy",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[5]",
+					"name" : "HEX0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[4]",
+					"name" : "HEX0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[3]",
+					"name" : "HEX0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[2]",
+					"name" : "HEX0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[1]",
+					"name" : "HEX0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "RESULT_A[0]",
+					"name" : "HEX0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "HEX0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "RESET_N",
+					"name" : "HEX1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "DVI",
+					"name" : "HEX1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "HEX1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A[15]",
+					"name" : "HEX1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "C[4]",
+					"name" : "HEX1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[13]",
+					"name" : "HEX1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[14]",
+					"name" : "HEX1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "HEX2[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "HEX2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "HEX2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "HEX2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A[5]",
+					"name" : "HEX2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[6]",
+					"name" : "HEX2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[8]",
+					"name" : "HEX2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "A[7]",
+					"name" : "HEX3[6]",
 					"strict" : false
 				},
 				{
-					"name" : "A[9]",
+					"name" : "HEX3[5]",
 					"strict" : false
 				},
 				{
-					"name" : "A[10]",
+					"name" : "HEX3[4]",
 					"strict" : false
 				},
 				{
-					"name" : "A[12]",
+					"name" : "HEX3[3]",
 					"strict" : false
 				},
 				{
-					"name" : "A[11]",
+					"name" : "HEX3[2]",
 					"strict" : false
 				},
 				{
-					"name" : "C[0]",
+					"name" : "HEX3[1]",
 					"strict" : false
 				},
 				{
-					"name" : "C[3]",
+					"name" : "HEX3[0]",
 					"strict" : false
 				},
 				{
-					"name" : "C[2]",
+					"name" : "LEDG[8]",
 					"strict" : false
 				},
 				{
-					"name" : "C[1]",
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[15]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[14]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[13]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I2C_SDAT",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[17]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AUD_ADCDAT",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
 					"strict" : false
 				}
 			]

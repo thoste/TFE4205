@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DEC",
+					"strict" : false
+				},
+				{
+					"name" : "LSL",
+					"strict" : false
+				},
+				{
+					"name" : "LSR",
+					"strict" : false
+				},
+				{
+					"name" : "TWOC",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD_DO",
+					"strict" : false
+				},
+				{
+					"name" : "RESET_DO",
+					"strict" : false
+				},
+				{
+					"name" : "LOAD_DCNT",
+					"strict" : false
+				},
+				{
+					"name" : "ZERO",
+					"strict" : false
+				},
+				{
+					"name" : "MTOR_LSB",
+					"strict" : false
+				},
+				{
+					"name" : "START_FSM",
+					"strict" : false
+				},
+				{
+					"name" : "RESET_N",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
