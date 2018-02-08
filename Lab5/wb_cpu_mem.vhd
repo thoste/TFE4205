@@ -58,66 +58,67 @@ begin
       -- Oppgave 1
       mem_storage(0) <= X"300FF100";    -- LDI R1, FF
       mem_storage(1) <= X"40000000";    -- JMP 0
-      
+		
       -- Oppgave 2
-      
-      -- mem_storage(0) <= X"30005100";    -- LDI R1, 5
-      -- mem_storage(1) <= X"30001200";    -- LDI R2, 1 
-      -- mem_storage(2) <= X"10800121";    -- SUB R1, R2,R1
-      -- mem_storage(3) <= X"20002000";    -- BNZ 2 
-      -- mem_storage(4) <= X"30011300";    -- LDI R3, 11
-      -- mem_storage(5) <= X"40000000";    -- JMP 0
-     
+		/*
+      mem_storage(0) <= X"30005100";    -- LDI R1, 5
+      mem_storage(1) <= X"30001200";    -- LDI R2, 1 
+      mem_storage(2) <= X"10800121";    -- SUB R1, R2,R1
+      mem_storage(3) <= X"20002000";    -- BNZ 2 
+      mem_storage(4) <= X"30011300";    -- LDI R3, 11
+      mem_storage(5) <= X"40000000";    -- JMP 0
+		*/
       
       -- Oppgave 3
+      /*
+		mem_storage(0) <= X"30001400";    -- LDI R4, 1
+      mem_storage(1) <= X"30002500";    -- LDI R5, 2
+      mem_storage(2) <= X"50000104";    -- IN  R1, R4
+      mem_storage(3) <= X"50000205";    -- IN  R2, R5
+      mem_storage(4) <= X"40002000";    -- JMP 2     
+		*/
       
-      --     -- LDI R4, 1
-      --     -- LDI R5, 2
-      --     -- IN  R1, R4
-      --     -- IN  R2, R5
-      --     -- JMP 2     
-    
-      -- Oppgave 4
-
+		-- Oppgave 4
+		/*
       -- Initial values
-      -- mem_storage(0) <= X"30060100";    -- LDI R1, 60 (current volume)
+      mem_storage(0) <= X"30060100";    -- LDI R1, 60 (current volume)
       
       -- Read key 1
-      -- mem_storage(1) <= X"30001400";    -- LDI R4, 1 (Port 1 is key 1)
-      -- mem_storage(2) <= X"50000204";    -- IN R2, R4 (Read port R4 and store the result in R2
+      mem_storage(1) <= X"30001400";    -- LDI R4, 1 (Port 1 is key 1)
+      mem_storage(2) <= X"50000204";    -- IN R2, R4 (Read port R4 and store the result in R2
                                            -- 0 means that the key has been pressed.
-      -- mem_storage(3) <= X"30001400";    -- LDI R4, 1 
-      -- mem_storage(4) <= X"10800242";    -- Sub R2, R4, R2 ( R2 = R2 - R4)
-      -- mem_storage(5) <= X"20030000";    -- BNZ 30 (if the substraction was not zero, then the key
+      mem_storage(3) <= X"30001400";    -- LDI R4, 1 
+      mem_storage(4) <= X"10800242";    -- Sub R2, R4, R2 ( R2 = R2 - R4)
+      mem_storage(5) <= X"20030000";    -- BNZ 30 (if the substraction was not zero, then the key
                                            -- was pressed). Jump to 0x30 (48) to handle it
       -- Read key 2
-      -- mem_storage(6) <= X"30002400";    -- LDI R4, 2 (Port 2 is key 2)
-      -- mem_storage(7) <= X"50000304";    -- IN R3, R4 (Read port R4 and store the result in R3
+      mem_storage(6) <= X"30002400";    -- LDI R4, 2 (Port 2 is key 2)
+      mem_storage(7) <= X"50000304";    -- IN R3, R4 (Read port R4 and store the result in R3
                                            -- 0 means that the key has been pressed.
-      -- mem_storage(8) <= X"30001400";    -- LDI R4, 1 
-      -- mem_storage(9) <= X"10800343";    -- Sub R3, R4, R3 ( R3 = R3 - R4)
-      -- mem_storage(10)<= X"20050000";    -- BNZ 50 (if the substraction was not zero, then the key
+      mem_storage(8) <= X"30001400";    -- LDI R4, 1 
+      mem_storage(9) <= X"10800343";    -- Sub R3, R4, R3 ( R3 = R3 - R4)
+      mem_storage(10)<= X"20050000";    -- BNZ 50 (if the substraction was not zero, then the key
                                            -- was pressed). Jump to 0x50 (80) to handle it
       -- Jump back to top
-      -- mem_storage(11)<= X"40001000";    -- JMP 1   (Repeat until something is pressed)
+      mem_storage(11)<= X"40001000";    -- JMP 1   (Repeat until something is pressed)
       
       -- Student-kode begynner her:
        
       -- Handle keypress 1
       -- First, wait til user lets go of the key
-      -- mem_storage(48) <= 
+      mem_storage(48) <= 
       -- Don't increase it beyond 7F (max volume)
 
       -- Handle keypress 2
       -- First, wait til user lets go of the key
-      -- mem_storage(80) <= 
+      mem_storage(80) <= 
       -- Don't increase it below 1 (min volume)
       
       -- Adjust volume
-      -- mem_storage(110)<= X"30003400";    -- LDI R4, 3 (Port 3 is volume)
-      -- mem_storage(111)<= X"60000014";    -- OUT R4, R1 (Write value R1 into R4)
-      -- mem_storage(112)<= X"40001000";    -- JMP 1 (Back to main)
-
+      mem_storage(110)<= X"30003400";    -- LDI R4, 3 (Port 3 is volume)
+      mem_storage(111)<= X"60000014";    -- OUT R4, R1 (Write value R1 into R4)
+      mem_storage(112)<= X"40001000";    -- JMP 1 (Back to main)
+		*/
       
 
     elsif rising_edge (core_clk) then

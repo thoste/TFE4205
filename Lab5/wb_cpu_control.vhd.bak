@@ -3,7 +3,7 @@
 -- Project    : Lab5, DigDat
 -------------------------------------------------------------------------------
 -- File       : wb_cpu_control.vhd
--- Author     : Asbjï¿½rn Djupdal  <asbjoern@djupdal.org>
+-- Author     : Asbjørn Djupdal  <asbjoern@djupdal.org>
 -- Company    : 
 -- Last update: 2008-06-12
 -- Platform   : BenERA, Virtex 1000E
@@ -24,11 +24,11 @@ entity wb_cpu_control is
 
   port (
     control_PS                : out std_logic;
-    control_PL          		: out std_logic;
-    control_MD2 					: out std_logic;
-    control_RW                : out std_logic;
-    control_IOW               : out std_logic;
-    control_MD1               : out std_logic;
+    control_PL          : out std_logic;
+    control_MD2 : out std_logic;
+    control_RW                  : out std_logic;
+    control_IOW                 : out std_logic;
+    control_MD1                 : out std_logic;
 
     sr     : in std_logic_vector(STATUS_BUS - 1 downto 0);
     opcode : in std_logic_vector(3 downto 0);
@@ -116,8 +116,6 @@ begin
             -- LDI Load Immidiate
             -- Oppgave 1:
             -- Studentkode her
-				control_PS <= '1';
-				control_MD2 <= '1';
           
           when "0100" =>
 			-- JMP Unconditional Branch (Jump)
