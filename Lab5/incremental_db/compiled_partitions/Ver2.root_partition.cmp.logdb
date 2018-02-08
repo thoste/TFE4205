@@ -1,0 +1,5 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,studentdesign:inst1|fact:inst5|wb_acomp_factorfinder:inst6|wb_aComp_factorMult:inst|lpm_mult:lpm_mult_component|mult_6bn:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,studentdesign:inst1|fact:inst5|wb_acomp_envshape:inst8|wb_acomp_valuereducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_4bn:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,studentdesign:inst1|fact:inst5|wb_acomp_envshape:inst8|wb_acomp_valuereducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_4bn:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,studentdesign:inst1|fact:inst5|wb_acomp_envshape:inst8|wb_acomp_valuereducer:inst1|wb_aComp_envShapeMult:inst6|lpm_mult:lpm_mult_component|mult_4bn:auto_generated|mac_mult1,
