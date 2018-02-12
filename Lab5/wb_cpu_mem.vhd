@@ -97,27 +97,43 @@ begin
                                            -- 0 means that the key has been pressed.
       mem_storage(8) <= X"30001400";    -- LDI R4, 1 
       mem_storage(9) <= X"10800343";    -- Sub R3, R4, R3 ( R3 = R3 - R4)
-      mem_storage(10)<= X"20050000";    -- BNZ 50 (if the substraction was not zero, then the key
+      mem_storage(10) <= X"20050000";    -- BNZ 50 (if the substraction was not zero, then the key
                                            -- was pressed). Jump to 0x50 (80) to handle it
       -- Jump back to top
-      mem_storage(11)<= X"40001000";    -- JMP 1   (Repeat until something is pressed)
+      mem_storage(11) <= X"40001000";    -- JMP 1   (Repeat until something is pressed)
       
       -- Student-kode begynner her:
        
       -- Handle keypress 1
       -- First, wait til user lets go of the key
-      mem_storage(48) <= 
+		mem_storage(48) <= X"30001400";    -- LDI R4, 1 (Port 1 is key 1)
+      mem_storage(49) <= X"50000204";    -- IN R2, R4 (Read port R4 and store the result in R2
+		mem_storage(50) <= X"10400202";    -- R2 = NOT R2
+		mem_storage(51) <= X"30001400";    -- LDI R4, 1
+      mem_storage(52) <= X"10800242";    -- Sub R2, R4, R2 ( R2 = R2 - R4)
+		mem_storage(53) <= X"20037000";    -- BNZ 37 if the key was released. Jump to 0x37 (55) to handle it
+		mem_storage(54) <= X"40030000";	  -- JMP 0x30 (48)   (Repeat until released)
       -- Don't increase it beyond 7F (max volume)
-
+		mem_storage(55) <= X"3007F400";	  -- LDI R2, 7F
+		mem_storage(56) <= X"10800212";    -- Sub R2, R1, R2 ( R2 = R2 - R1) (R2 = max volume - current volume)
+		mem_storage(57) <= X"2003B000";    -- BNZ 0x3B (59) if not zero (volume under max).  
+		mem_storage(58) <= X"4006E000";    -- JMP 110 (Adjust volume)
+		mem_storage(59) <= X"30001400";    -- LDI R4, 1
+		mem_storage(60) <= X"10700141";	  -- R1 = R1 + R4 (R1 = current volume + 1)
+		mem_storage(61) <= X"4006E000";    -- JMP 110 (Adjust volume)
+		
       -- Handle keypress 2
       -- First, wait til user lets go of the key
       mem_storage(80) <= 
+		mem_storage(81) <= X"20030000";    -- BNZ 30 if the key was released. Jump to 0x30 (48) to handle it
+		mem_storage(82) <= X"40050000";    -- JMP 0x50 (80)   (Repeat until released)
       -- Don't increase it below 1 (min volume)
+		mem_storeage() <= X"";
       
       -- Adjust volume
-      mem_storage(110)<= X"30003400";    -- LDI R4, 3 (Port 3 is volume)
-      mem_storage(111)<= X"60000014";    -- OUT R4, R1 (Write value R1 into R4)
-      mem_storage(112)<= X"40001000";    -- JMP 1 (Back to main)
+      mem_storage(110) <= X"30003400";    -- LDI R4, 3 (Port 3 is volume)
+      mem_storage(111) <= X"60000014";    -- OUT R4, R1 (Write value R1 into R4)
+      mem_storage(112) <= X"40001000";    -- JMP 1 (Back to main)
 		*/
       
 
