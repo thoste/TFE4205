@@ -1,5 +1,5 @@
 Assembler report for Ver2
-Mon Feb 12 20:42:16 2018
+Tue Feb 13 11:54:34 2018
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -9,9 +9,10 @@ Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
   1. Legal Notice
   2. Assembler Summary
   3. Assembler Settings
-  4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/stens/Documents/NTNU/TFE4205/Lab5/Ver2.sof
-  6. Assembler Messages
+  4. Assembler Encrypted IP Cores Summary
+  5. Assembler Generated Files
+  6. Assembler Device Options: C:/Users/stens/Documents/NTNU/TFE4205/Lab5/Ver2.sof
+  7. Assembler Messages
 
 
 
@@ -37,9 +38,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Feb 12 20:42:16 2018 ;
+; Assembler Status      ; Successful - Tue Feb 13 11:54:34 2018 ;
 ; Revision Name         ; Ver2                                  ;
-; Top-level Entity Name ; wb_cpu_mem                            ;
+; Top-level Entity Name ; Lab5                                  ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -50,6 +51,17 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 ; Option ; Setting ; Default Value ;
 +--------+---------+---------------+
+
+
++-------------------------------------------------------+
+; Assembler Encrypted IP Cores Summary                  ;
++--------+-------------------------------+--------------+
+; Vendor ; IP Core Name                  ; License Type ;
++--------+-------------------------------+--------------+
+; Altera ; Nios II Processor (6AF7 00A2) ; Licensed     ;
+; Altera ; Signal Tap (6AF7 BCE1)        ; Licensed     ;
+; Altera ; Signal Tap (6AF7 BCEC)        ; Licensed     ;
++--------+-------------------------------+--------------+
 
 
 +-----------------------------------------------------+
@@ -67,7 +79,7 @@ refer to the applicable agreement for further details.
 ; Option         ; Setting                                                      ;
 +----------------+--------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                   ;
-; Checksum       ; 0x00566726                                                   ;
+; Checksum       ; 0x009667F7                                                   ;
 +----------------+--------------------------------------------------------------+
 
 
@@ -77,14 +89,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Mon Feb 12 20:42:14 2018
+    Info: Processing started: Tue Feb 13 11:54:29 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Lab5 -c Ver2
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
-Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 605 megabytes
-    Info: Processing ended: Mon Feb 12 20:42:16 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 633 megabytes
+    Info: Processing ended: Tue Feb 13 11:54:34 2018
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 

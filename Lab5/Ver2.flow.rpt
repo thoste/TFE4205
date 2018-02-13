@@ -1,5 +1,5 @@
 Flow report for Ver2
-Mon Feb 12 20:42:19 2018
+Tue Feb 13 11:54:41 2018
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                              ;
 +------------------------------------+------------------------------------------------------+
-; Flow Status                        ; Successful - Mon Feb 12 20:42:16 2018                ;
+; Flow Status                        ; Successful - Tue Feb 13 11:54:34 2018                ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
 ; Revision Name                      ; Ver2                                                 ;
-; Top-level Entity Name              ; wb_cpu_mem                                           ;
+; Top-level Entity Name              ; Lab5                                                 ;
 ; Family                             ; Cyclone IV E                                         ;
 ; Device                             ; EP4CE115F29C7                                        ;
 ; Timing Models                      ; Final                                                ;
-; Total logic elements               ; 15 / 114,480 ( < 1 % )                               ;
-;     Total combinational functions  ; 4 / 114,480 ( < 1 % )                                ;
-;     Dedicated logic registers      ; 12 / 114,480 ( < 1 % )                               ;
-; Total registers                    ; 12                                                   ;
-; Total pins                         ; 42 / 529 ( 8 % )                                     ;
+; Total logic elements               ; 3,899 / 114,480 ( 3 % )                              ;
+;     Total combinational functions  ; 3,621 / 114,480 ( 3 % )                              ;
+;     Dedicated logic registers      ; 2,092 / 114,480 ( 2 % )                              ;
+; Total registers                    ; 2092                                                 ;
+; Total pins                         ; 128 / 529 ( 24 % )                                   ;
 ; Total virtual pins                 ; 0                                                    ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                      ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                        ;
+; Total memory bits                  ; 363,712 / 3,981,312 ( 9 % )                          ;
+; Embedded Multiplier 9-bit elements ; 6 / 532 ( 1 % )                                      ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                                       ;
 +------------------------------------+------------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/12/2018 20:41:55 ;
+; Start date & time ; 02/13/2018 11:53:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ver2                ;
 +-------------------+---------------------+
@@ -75,16 +75,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 193989711024204.151846451506728        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 174508024972475.151851918406652        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; 1             ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; wb_cpu_mem  ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; wb_cpu_mem  ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; wb_cpu_mem  ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Lab5        ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; Lab5        ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; Lab5        ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; wb_cpu_mem                             ; Ver2          ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; Lab5                                   ; Ver2          ; --          ; --         ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS  ; Off                                    ; --            ; --          ; eda_palace ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 719 MB              ; 00:00:17                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 1780 MB             ; 00:00:13                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 604 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 792 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:34                           ;
+; Analysis & Synthesis      ; 00:00:57     ; 1.0                     ; 877 MB              ; 00:01:26                           ;
+; Fitter                    ; 00:00:21     ; 1.1                     ; 1713 MB             ; 00:00:31                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 633 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.1                     ; 822 MB              ; 00:00:06                           ;
+; Total                     ; 00:01:29     ; --                      ; --                  ; 00:02:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +107,10 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; Thomas-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; Thomas-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; Thomas-PC        ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; Thomas-PC        ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; Thomas-XPS-Win10 ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; Thomas-XPS-Win10 ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; Thomas-XPS-Win10 ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; Thomas-XPS-Win10 ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

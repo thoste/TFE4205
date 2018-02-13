@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Feb 12 20:42:03 2018
+Analysis & Synthesis Status : Successful - Tue Feb 13 11:54:03 2018
 Quartus Prime Version : 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 Revision Name : Ver2
-Top-level Entity Name : wb_cpu_mem
+Top-level Entity Name : Lab5
 Family : Cyclone IV E
-Total logic elements : 14
-    Total combinational functions : 4
-    Dedicated logic registers : 12
-Total registers : 12
-Total pins : 42
+Total logic elements : 4,051
+    Total combinational functions : 3,618
+    Dedicated logic registers : 2,100
+Total registers : 2100
+Total pins : 128
 Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total memory bits : 363,712
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 1

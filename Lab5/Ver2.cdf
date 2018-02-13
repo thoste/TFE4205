@@ -1,10 +1,10 @@
-/* Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version */
+/* Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(EP2C35F672) MfrSpec(OpMask(0) FullPath("D:/user/Lab5/Lab5/Ver2.sof"));
+	P ActionCode(Cfg)
+		Device PartName(EP4CE115F29) Path("C:/Users/stens/Documents/NTNU/TFE4205/Lab5/") File("Ver2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

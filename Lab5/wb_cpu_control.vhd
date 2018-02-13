@@ -116,8 +116,8 @@ begin
             -- LDI Load Immidiate
             -- Oppgave 1:
             -- Studentkode her
-				control_PS <= '1';
 				control_MD2 <= '1';
+				control_RW <= '1';
           
           when "0100" =>
 			-- JMP Unconditional Branch (Jump)
