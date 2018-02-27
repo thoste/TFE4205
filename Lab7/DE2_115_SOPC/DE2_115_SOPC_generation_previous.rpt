@@ -1,0 +1,88 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate X:\Fag\TFE4205\Lab\Eksperimenter\Lab6\DE2_115_SOPC.qsys --block-symbol-file --output-directory=X:\Fag\TFE4205\Lab\Eksperimenter\Lab6\DE2_115_SOPC --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Lab6/DE2_115_SOPC.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 17.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 17.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_led [altera_avalon_pio 17.1]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2_115_SOPC.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate X:\Fag\TFE4205\Lab\Eksperimenter\Lab6\DE2_115_SOPC.qsys --synthesis=VERILOG --output-directory=X:\Fag\TFE4205\Lab\Eksperimenter\Lab6\DE2_115_SOPC\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Lab6/DE2_115_SOPC.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 17.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 17.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pio_led [altera_avalon_pio 17.1]
+Progress: Parameterizing module pio_led
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: DE2_115_SOPC.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: DE2_115_SOPC: Generating DE2_115_SOPC "DE2_115_SOPC" for QUARTUS_SYNTH
+Info: cpu: "DE2_115_SOPC" instantiated altera_nios2_gen2 "cpu"
+Info: jtag_uart_0: Starting RTL generation for module 'DE2_115_SOPC_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=DE2_115_SOPC_jtag_uart_0 --dir=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0002_jtag_uart_0_gen//DE2_115_SOPC_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'DE2_115_SOPC_jtag_uart_0'
+Info: jtag_uart_0: "DE2_115_SOPC" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: onchip_memory2: Starting RTL generation for module 'DE2_115_SOPC_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=DE2_115_SOPC_onchip_memory2 --dir=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0003_onchip_memory2_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0003_onchip_memory2_gen//DE2_115_SOPC_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'DE2_115_SOPC_onchip_memory2'
+Info: onchip_memory2: "DE2_115_SOPC" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: pio_led: Starting RTL generation for module 'DE2_115_SOPC_pio_led'
+Info: pio_led:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=DE2_115_SOPC_pio_led --dir=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0004_pio_led_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0004_pio_led_gen//DE2_115_SOPC_pio_led_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_led: Done RTL generation for module 'DE2_115_SOPC_pio_led'
+Info: pio_led: "DE2_115_SOPC" instantiated altera_avalon_pio "pio_led"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "DE2_115_SOPC" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "DE2_115_SOPC" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "DE2_115_SOPC" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'DE2_115_SOPC_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/17.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/17.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/17.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=DE2_115_SOPC_cpu_cpu --dir=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/17.1/quartus/bin64/ --verilog --config=C:/Users/PERGUN~1/AppData/Local/Temp/alt7585_5294370799316958815.dir/0007_cpu_gen//DE2_115_SOPC_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.02.23 15:58:41 (*) Starting Nios II generation
+Info: cpu: # 2018.02.23 15:58:41 (*)   Checking for plaintext license.
+Info: cpu: # 2018.02.23 15:58:42 (*)   Plaintext license not found.
+Info: cpu: # 2018.02.23 15:58:42 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2018.02.23 15:58:42 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2018.02.23 15:58:42 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.02.23 15:58:42 (*)   Creating all objects for CPU
+Info: cpu: # 2018.02.23 15:58:42 (*)     Testbench
+Info: cpu: # 2018.02.23 15:58:43 (*)     Instruction decoding
+Info: cpu: # 2018.02.23 15:58:43 (*)       Instruction fields
+Info: cpu: # 2018.02.23 15:58:43 (*)       Instruction decodes
+Info: cpu: # 2018.02.23 15:58:43 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2018.02.23 15:58:43 (*)       Instruction controls
+Info: cpu: # 2018.02.23 15:58:43 (*)     Pipeline frontend
+Info: cpu: # 2018.02.23 15:58:43 (*)     Pipeline backend
+Info: cpu: # 2018.02.23 15:58:46 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.02.23 15:58:48 (*)   Creating encrypted RTL
+Info: cpu: # 2018.02.23 15:58:49 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'DE2_115_SOPC_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Error: Generation stopped, 40 or more modules remaining
+Info: DE2_115_SOPC: Done "DE2_115_SOPC" with 28 modules, 25 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Info: Stopping: Create HDL design files for synthesis

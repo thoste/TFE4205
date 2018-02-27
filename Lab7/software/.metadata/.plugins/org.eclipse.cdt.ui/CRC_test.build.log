@@ -1,0 +1,9 @@
+22:26:09 **** Incremental Build of configuration Nios II for project CRC_test ****
+make all 
+Info: Building ../CRC_test_bsp/
+C:/intelFPGA_lite/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../CRC_test_bsp/
+[BSP build complete]
+[CRC_test build complete]
+
+22:26:12 Build Finished (took 3s.109ms)
+
