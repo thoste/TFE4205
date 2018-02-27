@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ver2
-Tue Feb 13 11:54:04 2018
+Tue Feb 20 11:03:57 2018
 Quartus Prime Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
 
 
@@ -157,7 +157,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                              ;
 +------------------------------------+------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 13 11:54:03 2018                ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 20 11:03:56 2018                ;
 ; Quartus Prime Version              ; 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition ;
 ; Revision Name                      ; Ver2                                                 ;
 ; Top-level Entity Name              ; Lab5                                                 ;
@@ -274,9 +274,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -3343,7 +3343,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -3353,7 +3353,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.1 Internal Build 593 12/11/2017 SJ Lite Edition
-    Info: Processing started: Tue Feb 13 11:53:04 2018
+    Info: Processing started: Tue Feb 20 11:03:04 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab5 -c Ver2
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
@@ -5840,7 +5840,7 @@ Info (12128): Elaborating entity "wb_hexTo7segAll" for hierarchy "wb_hexTo7segAl
 Info (12129): Elaborating entity "wb_hexTo7segOne" using architecture "A:behavior" for hierarchy "wb_hexTo7segAll:inst2|wb_hexTo7segOne:U7seg3" File: C:/Users/stens/Documents/NTNU/TFE4205/Lab5/wb_hexTo7segAll.vhd Line: 24
 Warning (12030): Port "usedw" on the entity instantiation of "Incoming_Data_FIFO" is connected to a signal of width 16. The formal width of the signal in the module is 8.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/stens/Documents/NTNU/TFE4205/Lab5/altera_up_avalon_ps2.v Line: 205
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2018.02.13.11:53:39 Progress: Loading sld7bb2859b/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2018.02.20.11:03:37 Progress: Loading sld7bb2859b/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -5944,9 +5944,9 @@ Info (21057): Implemented 4662 device resources after synthesis - the final reso
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 6 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 185 warnings
-    Info: Peak virtual memory: 877 megabytes
-    Info: Processing ended: Tue Feb 13 11:54:04 2018
-    Info: Elapsed time: 00:01:00
-    Info: Total CPU time (on all processors): 00:01:29
+    Info: Peak virtual memory: 868 megabytes
+    Info: Processing ended: Tue Feb 20 11:03:57 2018
+    Info: Elapsed time: 00:00:53
+    Info: Total CPU time (on all processors): 00:01:13
 
 
