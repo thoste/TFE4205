@@ -6,9 +6,17 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element CRC_0
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
    element clk_50
    {
       datum _sortIndex
@@ -95,7 +103,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="Lab7.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -109,6 +117,14 @@
    type="conduit"
    dir="end" />
  <interface name="reset" internal="clk_50.clk_in_reset" type="reset" dir="end" />
+ <module name="CRC_0" kind="CRC" version="1.0" enabled="1">
+  <parameter name="crc_width" value="32" />
+  <parameter name="polynomial" value="79764919" />
+  <parameter name="polynomial_inital" value="4294967295" />
+  <parameter name="reflected_input" value="1" />
+  <parameter name="reflected_output" value="1" />
+  <parameter name="xor_output" value="4294967295" />
+ </module>
  <module name="clk_50" kind="clock_source" version="17.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -128,7 +144,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="crc_0" baseAddress="0" addressSpan="8" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -418,6 +434,15 @@
    end="onchip_memory2.clk1" />
  <connection kind="interrupt" version="17.1" start="cpu.irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="17.1"
+   start="cpu.custom_instruction_master"
+   end="CRC_0.nios_custom_instruction_slave">
+  <parameter name="CIName" value="crc_0" />
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0" />
  </connection>
  <connection kind="reset" version="17.1" start="clk_50.clk_reset" end="cpu.reset" />
  <connection

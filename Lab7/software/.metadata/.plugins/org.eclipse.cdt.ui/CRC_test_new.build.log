@@ -1,0 +1,27 @@
+11:27:56 **** Incremental Build of configuration Nios II for project CRC_test_new ****
+make all 
+Info: Building ../CRC_test_new_bsp/
+C:/intelFPGA_lite/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../CRC_test_new_bsp/
+[BSP build complete]
+Info: Compiling ci_crc.c to obj/default/ci_crc.o
+nios2-elf-gcc -xc -MP -MMD -c -I../CRC_test_new_bsp//HAL/inc -I../CRC_test_new_bsp/ -I../CRC_test_new_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/ci_crc.o ci_crc.c
+ci_crc.c: In function 'crcCI':
+ci_crc.c:55:50: error: 'ALT_CI_CRC_0_N' undeclared (first use in this function)
+ #define CRC_CI_MACRO(n, A) __builtin_custom_ini((ALT_CI_CRC_0_N + (n & 0x7)), (A))
+                                                  ^
+ci_crc.c:64:3: note: in expansion of macro 'CRC_CI_MACRO'
+   CRC_CI_MACRO(0,0);
+   ^
+ci_crc.c:55:50: note: each undeclared identifier is reported only once for each function it appears in
+ #define CRC_CI_MACRO(n, A) __builtin_custom_ini((ALT_CI_CRC_0_N + (n & 0x7)), (A))
+                                                  ^
+ci_crc.c:64:3: note: in expansion of macro 'CRC_CI_MACRO'
+   CRC_CI_MACRO(0,0);
+   ^
+ci_crc.c:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [obj/default/ci_crc.o] Error 1
+
+11:27:58 Build Finished (took 1s.677ms)
+
